@@ -11,11 +11,20 @@ const SearchBar: React.FC = () => {
   return (
     <TextInput
       value={value}
-      type="text"
+      type="search"
       onChange={setInput}
       aria-label="text input example"
       placeholder="Search for resources..."
-      style={{ marginLeft: '-0.5em' }}
+      spellCheck='false'
+      style={{
+        marginLeft: '-10em',
+        marginRight: '20em',
+        borderRadius: '4px',
+        background: '#2e2e2e',
+        border: '0px',
+        fontStyle: 'italic',
+        color: '#ffff',
+      }}
     />
   );
 };
